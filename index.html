@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name - Sci-Fi Portfolio</title>
     <style>
-        /* CSS Styles */
+        /* Sci-Fi Futuristic Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Orbitron', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #0a0a0a;
+            color: #00ffcc;
             text-align: center;
         }
         header {
-            background: #333;
-            color: #fff;
+            background: linear-gradient(90deg, #001f3f, #0074D9);
             padding: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 15px #00ffcc;
         }
         nav ul {
             list-style: none;
             padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         nav ul li a {
-            color: #fff;
+            color: #00ffcc;
             text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff00ff;
         }
         .section {
-            padding: 50px;
+            padding: 100px 20px;
+            border-bottom: 2px solid #00ffcc;
         }
         .project {
-            background: #fff;
+            background: rgba(0, 255, 204, 0.1);
             padding: 20px;
             margin: 20px auto;
             width: 80%;
             max-width: 600px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px #00ffcc;
             border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        #skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        #skills li {
+            background: rgba(0, 255, 204, 0.1);
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #00ffcc;
         }
     </style>
 </head>
@@ -59,31 +84,36 @@
     </header>
     
     <section id="home" class="section">
-        <h2>Hi, I'm Your Name</h2>
-        <p>Web Developer | Designer | Coder</p>
+        <h2>Welcome to My Sci-Fi Universe</h2>
+        <p>Web Developer | AI Enthusiast | Futurist</p>
     </section>
     
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am a passionate web developer with expertise in front-end and back-end technologies.</p>
+        <p>I am a dedicated B.Tech student in Computer Science at Main Poornima College of Engineering with a strong interest in front-end web development. I have developed foundational skills in HTML, CSS, and JavaScript, and I am continuously honing my knowledge to create user-friendly, responsive websites. My goal is to combine my academic background with practical experience to contribute to innovative web development projects.</p>
+        <p>With a keen eye for design and a passion for coding, I am eager to explore opportunities to work on real-world projects, collaborate with industry professionals, and further expand my skills in web development. I am open to learning and growing within the field, bringing a proactive, solution-oriented approach to every challenge.</p>
     </section>
     
     <section id="projects" class="section">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project Name</h3>
-            <p>Description of the project.</p>
+            <h3>AI-Powered Website</h3>
+            <p>An advanced website integrating AI to enhance user experience.</p>
+        </div>
+        <div class="project">
+            <h3>Cyberpunk Portfolio</h3>
+            <p>A digital portfolio inspired by sci-fi and neon aesthetics.</p>
         </div>
     </section>
     
     <section id="skills" class="section">
         <h2>Skills</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>HTML & CSS</li>
             <li>JavaScript</li>
-            <li>React</li>
+            <li>React.js</li>
             <li>Node.js</li>
+            <li>AI/ML</li>
         </ul>
     </section>
     
@@ -93,7 +123,7 @@
     </section>
     
     <script>
-        // JavaScript for smooth scrolling
+        // JavaScript for smooth scrolling and futuristic effects
         document.querySelectorAll('nav ul li a').forEach(anchor => {
             anchor.addEventListener('click', function(event) {
                 event.preventDefault();
