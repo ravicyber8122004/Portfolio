@@ -1,60 +1,123 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
     color: #333;
-    line-height: 1.6;
-    text-align: center;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #0056b3;
     padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background: #003d82;
+    padding: 15px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background: #007bff;
 }
 
-section {
-    padding: 40px;
+nav ul li a:hover {
+    background: #0056b3;
 }
 
-.project {
+.container {
+    max-width: 900px;
+    margin: 40px auto;
     background: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: 0.3s;
+    color: #007bff;
+}
+
+.social-media a:hover {
+    color: #00d4ff;
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: #003d82;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
 }
