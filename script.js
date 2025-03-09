@@ -8,7 +8,6 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         });
     });
 });
-
 // Navbar Active Link Highlight on Scroll
 window.addEventListener('scroll', () => {
     let sections = document.querySelectorAll("section");
